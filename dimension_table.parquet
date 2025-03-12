@@ -1,0 +1,9 @@
+Dimension Table (dim_content)
+CREATE TABLE dim_content (
+    content_id INT,
+    title STRING,
+    category STRING,
+    length INT,
+    artist STRING
+)
+STORED AS PARQUET;

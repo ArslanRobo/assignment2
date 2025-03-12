@@ -1,0 +1,11 @@
+CREATE TABLE fact_user_actions (
+    user_id INT,
+    content_id INT,
+    action STRING,
+    timestamp TIMESTAMP,
+    device STRING,
+    region STRING,
+    session_id STRING
+)
+PARTITIONED BY (year INT, month INT, day INT)
+STORED AS PARQUET;
